@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 *::selection{
     color: white;
     background-color:rgba(41, 77, 70, 0.521);
@@ -29,28 +30,51 @@
 }
 
 .navigation_list li {
-    padding: 10px;
-    margin: 20px 0px 20px 0px;
+    padding-top: 10px;
+    margin: 20px 50px 20px 10px;
 }
 
 .navigation_list a{
     text-decoration: none;
     color: white;
     font-weight:bold;
-    transition: .5s;
 }
 
 .navigation_list a:hover{
-    background-color: rgb(41, 77, 88);
-    border-radius: 10px;
-    transition: .5s;
-    padding: 15px;
+    color: rgb(41, 77, 88);
+}
+.form-control{
+    width: 300px;
+    margin:auto;
+}
+.btn-outline-success{
+    margin:auto;
+    margin-right: 20px;
 }
 
-@media(max-width:324px){
+@media(max-width:506px){
     .navigation_list{
         flex-direction: column;
         text-align: center;
+    }
+    .form-control{
+        width: 160px;
+        margin-left: 20px;
+    }
+}
+@media (max-width:1228px){
+    .header_navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navigation_list{
+        justify-content: space-evenly;
+    }
+    .form-control{
+        margin-bottom: 10px;
+    }
+    .btn-outline-success{
+        margin-bottom: 10px;
     }
 }
 /* MAIN INICIO */
@@ -75,7 +99,7 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 30px;
     display: inline-block;
     background-color: rgb(0, 0, 0);
@@ -142,19 +166,10 @@
     min-width: 210px;
 }
 .section_images img{
-    margin: 20px;
-    width: 400px;
-    padding: 30px;
-    border-radius: 30px;
-    transition: .5s;
+    width: 350px !important;
+    margin-top: 10px !important;
 }
 
-.section_images img:hover{
-    transform: scale(1.12,1.12);
-    padding: 10px;
-    transition: .5s;
-    background-color: rgb(41, 77, 88);
-}
 
 /* RESPONSIVE MAIN */
 
@@ -224,13 +239,12 @@
 }
 
 .footer_list li {
-    padding: 10px;
-    margin: 25px 50px 5px 50px;
+    margin: 30px 100px 0px 100px;
     display: inline-block;
 }
 
 .footer p{
-    padding: 10px;
+    padding-top: 10px;
     margin-bottom: 10px;
     display: inline-block;
     color: grey;
@@ -264,7 +278,6 @@
 
 .fa-solid {
     margin-right: 5px;
-    color: white;
 }
 
 .main_formacion_list .fa-solid{
@@ -512,22 +525,14 @@
 
 .main_section_aboutme p{
     color: white;
-    margin: 110px 40px 20px 20px;
+    margin: 80px 40px 20px 20px !important;
     text-align: justify;
 }
 
 .main_section_aboutme img{
     width: 400px;
     height: fit-content;
-    margin: 40px;
-    transition: .5s;
-}
-
-.main_section_aboutme img:hover{
-    transform: scale(1.1,1.1);
-    padding: 10px;
-    transition: .5s;
-    background-color: rgb(41, 77, 88);
+    margin: 40px !important;
 }
 
 .main_section2_aboutme{
@@ -538,20 +543,12 @@
 .main_section2_aboutme img{
     width: 400px;
     height: fit-content;
-    margin: 40px;
-    transition: .5s;
-}
-
-.main_section2_aboutme img:hover{
-    transform: scale(1.1,1.1);
-    padding: 10px;
-    transition: .5s;
-    background-color: rgb(41, 77, 88);
+    margin: 40px !important;
 }
 
 .main_section2_aboutme p{
     color: white;
-    margin: 120px 20px 20px 40px;
+    margin: 90px 20px 20px 40px !important;
     text-align: justify;
 }
 
@@ -562,22 +559,14 @@
 
 .main_aside_aboutme p{
     color: white;
-    margin: 120px 40px 100px 20px;
+    margin: 90px 40px 100px 20px !important;
     text-align: justify;
 }
 
 .main_aside_aboutme img{
     width: 400px;
     height: fit-content;
-    margin: 40px;
-    transition: .5s;
-}
-
-.main_aside_aboutme img:hover{
-    transform: scale(1.1,1.1);
-    padding: 10px;
-    transition: .5s;
-    background-color: rgb(41, 77, 88);
+    margin: 40px !important;
 }
 
 /* RESPONSIVE SOBRE MI */
@@ -595,7 +584,7 @@
     }
     .main_section_aboutme p{
         text-align: justify;
-        margin: 15px;
+        margin: 15px !important;
         padding: 0px;
     }
     .main_section2_aboutme{
@@ -607,7 +596,7 @@
     }
     .main_section2_aboutme p{
         text-align: justify;
-        margin: 15px;
+        margin: 15px !important;
         padding: 0px;
     }
     .main_aside_aboutme{
@@ -616,7 +605,7 @@
     }
     .main_aside_aboutme p{
         text-align: justify;
-        margin: 15px;
+        margin: 15px !important;
         display: block;
         padding: 0px;
     }
@@ -652,36 +641,36 @@
         flex-wrap: nowrap;
     }
     .main_section_aboutme p{
-        margin: 100px 40px 100px 20px;
+        margin: 100px 40px 100px 20px !important;
     }
     .main_section_aboutme img{
         width: 400px;
         height: fit-content;
-        margin: 40px;
+        margin: 40px !important;
     }
     .main_section2_aboutme{
         justify-content: flex-end;
         flex-wrap: nowrap;
     }
     .main_section2_aboutme p{
-        margin: 150px 20px 100px 40px;
+        margin: 80px 20px 100px 40px !important;
     }
     .main_section2_aboutme img{
         width: 400px;
         height: fit-content;
-        margin: 40px;
+        margin: 40px !important;
     }
     .main_aside_aboutme{
         justify-content: flex-start;
         flex-wrap: nowrap;
     }
     .main_aside_aboutme p{
-        margin: 100px 40px 100px 20px;
+        margin: 80px 40px 100px 20px !important;
     }
     .main_aside_aboutme img{
         width: 400px;
         height: fit-content;
-        margin: 40px;
+        margin: 40px !important;
     }
 }
 /* FORMACION */
