@@ -182,7 +182,7 @@
         text-align: justify;
     }
     .section_images img{
-        margin-top: 25px;
+        margin-top: 50px !important;
         width: 250px !important;
     }
 }
