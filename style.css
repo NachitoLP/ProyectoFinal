@@ -52,10 +52,16 @@
     margin-right: 20px;
 }
 
-@media(max-width:506px){
+@media(max-width:481px){
     .navigation_list{
         flex-direction: column;
         text-align: center;
+    }
+    .navigation_list li{
+        margin: 5px;
+    }
+    .navigation_list i{
+        margin-right: 10px;
     }
     .form-control{
         width: 160px;
