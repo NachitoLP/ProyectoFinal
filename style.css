@@ -540,6 +540,41 @@
     border-top: 2px solid white;
 }
 
+.main_div_progress{
+    width:90%;
+    background-color: rgba(41, 77, 88, 0.507);
+    height: 420px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border: 3px solid white;
+}
+
+.progress{
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.html_img{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+
+.css_img{
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+.js_img{
+    width: 195px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+
 .main_section_aboutme {
     display: flex;
 }
