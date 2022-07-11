@@ -575,6 +575,39 @@
     display: block;
 }
 
+@media(max-width:1420px){
+    .main_div_progress{
+        height: 800px;
+    }
+}
+@media(max-width:948px){
+    .main_div_progress{
+        height: 1200px;
+    }
+}
+@media(max-width:489px){
+    .progress{
+        width: 350px;
+    }
+}
+@media(max-width:420px){
+    .main_div_progress{
+        height: 950px;
+    }
+    .progress{
+        width: 250px;
+    }
+    .html_img{
+        width: 200px;
+    }
+    .css_img{
+        width: 200px;
+    }
+    .js_img{
+        width: 140px;    
+    }
+}
+
 .main_section_aboutme {
     display: flex;
 }
