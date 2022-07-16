@@ -426,7 +426,7 @@
 
 .main_aboutme_progress {
   width: 90%;
-  background-color: rgba(185, 57, 95, 0.35);
+  background-color: rgba(187, 0, 56, 0.5);
   height: 420px;
   margin-top: 40px;
   margin-bottom: 60px;
@@ -649,7 +649,7 @@
   justify-content: center; }
   .main_formacion_div div {
     text-align: center;
-    background-color: rgba(187, 0, 56, 0.45);
+    background-color: rgba(187, 0, 56, 0.5);
     border: 2px solid white;
     height: fit-content;
     margin: 50px 0px 50px 0px;
