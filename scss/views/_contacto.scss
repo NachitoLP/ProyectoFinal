@@ -1,0 +1,229 @@
+/* CONTACTO */
+
+.body_contacto {
+    background-image: url(../Fotos/nav.jpg);
+    background-color: black;
+}
+
+.main_contact {
+    height: 1000px;
+    width: 100%;
+    min-width: 300px;
+}
+
+.main_contact_form {
+    display: flex;
+    justify-content: center;
+
+    label {
+        display: block;
+        padding-top: 10px;
+    }
+
+    fieldset {
+        width: 1000px;
+        text-align: center;
+        color: white;
+        border: none;
+    }
+    
+    legend {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    input {
+        padding: 10px;
+        margin: 10px;
+        width: 800px;
+        height: 50px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.61);
+        color: white;
+        transition: 0.5s;
+
+        &::placeholder {
+            color: white;
+        }
+        &:focus {
+            transform: scale(1.1, 1.1);
+            transition: 0.5s;
+        }
+    }
+
+    textarea {
+        padding: 10px;
+        resize: none;
+        margin: 10px 0px 10px 0px;
+        width: 800px;
+        background-color: rgba(0, 0, 0, 0.61);
+        color: white;
+        transition: 0.5s;
+    
+        &::placeholder {
+            color: white;
+        }
+        &:focus {
+            transform: scale(1.1, 1.1);
+            transition: 0.5s;
+        }
+    }
+
+    select {
+        padding: 10px;
+        margin: 10px;
+        width: 800px;
+        height: 50px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.61);
+        color: white;
+        transition: 0.5s;
+    
+        &:focus {
+            transform: scale(1.1, 1.1);
+            transition: 0.5s;
+        }
+    
+        option {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.466);
+        }
+    }
+
+    #enviar {
+        background-color: $color-primary;
+        border: 2px solid black;
+        color: white;
+        font-size: 15px;
+        transition: 0.2s;
+    
+        &:focus {
+            transform: none;
+        }
+        &:hover {
+            background-color: $color-hover;
+            transition: 0.2s;
+        }
+    }
+}
+
+/* RESPONSIVE CONTACTO */
+
+@media(min-width:200px) {
+    .main_contact_form {
+        fieldset {
+            width: 200px;
+            margin-top: 0px;
+        }
+
+        input {
+            width: 200px;
+            margin: 5px;
+            padding: 0px;
+        }
+
+        textarea {
+            width: 200px;
+            margin: 5px;
+            padding: 0px;
+        }
+
+        select {
+            width: 200px;
+            margin: 5px;
+            padding: 0px;
+        }
+
+        label {
+            text-align: center;
+            margin: 10px;
+        }
+    }
+}
+
+@media(min-width:300px) {
+    .main_contact_form {
+        fieldset {
+            width: 500px;
+        }
+
+        input {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        select {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+}
+
+@media(min-width:520px) {
+    .main_contact_form {
+        fieldset {
+            width: 600px;
+        }
+
+        input {
+            width: 400px;
+        }
+
+        textarea {
+            width: 400px;
+        }
+
+        select {
+            width: 400px;
+        }
+    } 
+}
+
+@media(min-width:625px) {
+    .main_contact_form {
+        fieldset {
+            width: 800px;
+        }
+
+        input {
+            width: 600px;
+        }
+
+        textarea {
+            width: 600px;
+        }
+
+        select {
+            width: 600px;
+        }
+    }
+}
+
+@media(min-width:900px) {
+    .main_contact_form {
+        fieldset {
+            width: 1000px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 800px;
+        }
+
+        textarea {
+            width: 800px;
+        }
+
+        select {
+            width: 800px;
+        }
+    }
+}

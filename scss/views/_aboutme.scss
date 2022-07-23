@@ -1,0 +1,302 @@
+/* ABOUT ME */
+
+.body_aboutme {
+    background-image: url(../Fotos/Fondonav.jpg);
+    background-color: black;
+}
+
+.main_aboutme {
+    height: max-content;
+    width: 100%;
+    min-width: 300px;
+
+    h1 {
+        display: inline-block;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        width: 200px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+}
+
+.main_aboutme_progress {
+    width: 90%;
+    background-color: $color-background;
+    height: 420px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border: 3px solid white;
+
+    .progress {
+        width: 400px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .html_img {
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .css_img {
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .js_img {
+        width: 195px;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+.main_section_aboutme {
+    display: flex;
+
+    p {
+        color: white;
+        margin: 80px 40px 20px 20px !important;
+        text-align: justify;
+    }
+
+    img {
+        width: 400px;
+        height: fit-content;
+        margin: 40px !important;
+    }
+}
+
+.main_section2_aboutme {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
+    img {
+        width: 400px;
+        height: fit-content;
+        margin: 40px !important;
+    }
+
+    p {
+        color: white;
+        margin: 90px 20px 20px 40px !important;
+        text-align: justify;
+    }
+    
+}
+
+.main_section3_aboutme {
+    display: flex;
+    justify-content: flex-start;
+
+    p {
+        color: white;
+        margin: 90px 40px 100px 20px !important;
+        text-align: justify;
+    }
+
+    img {
+        width: 400px;
+        height: fit-content;
+        margin: 40px !important;
+    }
+}
+
+/* RESPONSIVE SOBRE MI */
+
+/* PROGRESS */
+
+@media(max-width:1420px) {
+    .main_aboutme_progress {
+        height: 800px;
+    }
+}
+
+@media(max-width:948px) {
+    .main_aboutme_progress {
+        height: 1200px;
+    }
+}
+
+@media(max-width:489px) {
+    .main_aboutme_progress {
+        width: 100%;
+
+        .progress {
+            width: 350px;
+        }
+    }
+}
+
+@media(max-width:420px) {
+    .main_aboutme_progress {
+        height: 950px;
+
+        .progress {
+            width: 250px;
+        }
+
+        .html_img {
+            width: 200px;
+        }
+
+        .css_img {
+            width: 200px;
+        }
+
+        .js_img {
+            width: 140px;
+        }
+    }
+}
+
+/* SECTIONS */
+
+@media(min-width:200px) {
+    .main_aboutme {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main_section_aboutme {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 250px;
+        }
+
+        p {
+            text-align: justify;
+            margin: 15px !important;
+            padding: 0px;
+        }
+    
+    }
+
+    .main_section2_aboutme {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 250px;
+        }
+
+        p {
+            text-align: justify;
+            margin: 15px !important;
+            padding: 0px;
+        }
+    }
+    .main_section3_aboutme {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        p {
+            text-align: justify;
+            margin: 15px !important;
+            display: block;
+            padding: 0px;
+        }
+
+        img {
+            width: 250px;
+        }
+    }
+}
+
+@media(min-width:450px) {
+    .main_section_aboutme {
+        img {
+            width: 300px;
+        }
+    }
+
+    .main_section2_aboutme {
+        img {
+            width: 300px;
+        }
+    }
+
+    .main_section3_aboutme {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media(min-width:750px) {
+    .main_section_aboutme {
+        img {
+            width: 400px;
+        }
+    }
+
+    .main_section2_aboutme {
+        img {
+            width: 400px;
+        }
+    }
+
+    .main_section3_aboutme {
+        img {
+            width: 400px;
+        }
+    }
+}
+
+@media(min-width:1600px) {
+    .main_section_aboutme {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        p {
+            margin: 100px 40px 100px 20px !important;
+        }
+
+        img {
+            width: 400px;
+            height: fit-content;
+            margin: 40px !important;
+        }
+    }
+
+    .main_section2_aboutme {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        p {
+            margin: 80px 20px 100px 40px !important;
+        }
+
+        img {
+            width: 400px;
+            height: fit-content;
+            margin: 40px !important;
+        }
+    }
+
+    .main_section3_aboutme {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        p {
+            margin: 80px 40px 100px 20px !important;
+        }
+
+        img {
+            width: 400px;
+            height: fit-content;
+            margin: 40px !important;
+        }
+    }
+}

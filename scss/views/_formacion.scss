@@ -1,0 +1,249 @@
+/* FORMACION */
+
+.body_formacion {
+    background-image: url(../Fotos/Fondonav.jpg);
+    background-color: black;
+}
+
+.main_formacion {
+    height: max-content;
+    width: 100%;
+    padding-bottom: 20px;
+    min-width: 300px;
+}
+
+.main_formacion_section1 {
+    display: flex;
+
+    p {
+        color: white;
+        text-align: justify;
+        margin: 100px 40px 100px 20px;
+    }
+
+    img {
+        width: 500px;
+        height: fit-content;
+        margin: 40px;
+        transition: .5s;
+    }
+}
+
+.main_formacion_section2 {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    p {
+        color: white;
+        text-align: justify;
+        margin: 150px 20px 100px 40px;
+    }
+
+    img {
+        width: 500px;
+        height: fit-content;
+        margin: 40px;
+        transition: .5s;
+    }
+    
+}
+
+.main_formacion_section3 {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        color: white;
+        text-align: justify;
+        margin: 100px 40px 100px 20px;
+    }
+
+    img {
+        width: 400px;
+        height: fit-content;
+        margin: 40px;
+        transition: .5s;
+    }
+}
+
+.main_formacion_div {
+    display: flex;
+    justify-content: center;
+
+    div {
+        text-align: center;
+        background-color: $color-background;
+        border: 2px solid white;
+        height: fit-content;
+        margin: 50px 0px 50px 0px;
+        width: 600px;
+    }
+
+    h1 {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        margin-top: 20px;
+    }
+}
+
+.main_formacion_list {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 20px;
+
+    li {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+/* RESPONSIVE FORMACION */
+
+@media(min-width:200px) {
+    .main_formacion {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main_formacion_section1 {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 250px;
+        }
+
+        p {
+            text-align: justify;
+            margin: 15px;
+            padding: 0px;
+        }
+    }
+
+    .main_formacion_section2 {
+        justify-content: center;
+
+        img {
+            width: 250px;
+        }
+
+        p {
+            text-align: justify;
+            margin: 15px;
+            padding: 0px;
+        }
+    }
+
+    .main_formacion_section3 {
+        justify-content: center;
+
+        p {
+            text-align: justify;
+            margin: 15px;
+            display: block;
+            padding: 0px;
+        }
+
+        img {
+            width: 250px;
+        }
+    }
+}
+
+@media(min-width:450px) {
+    .main_formacion_section1 {
+        img {
+            width: 300px;
+        }
+    }
+
+    .main_formacion_section2 {
+        img {
+            width: 300px;
+        }
+    }
+
+    .main_formacion_section3 {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media(min-width:750px) {
+    .main_formacion_section1 {
+        img {
+            width: 400px;
+        }
+    }
+
+    .main_formacion_section2 {
+        img {
+            width: 400px;
+        }
+    }
+
+    .main_formacion_section3 {
+        img {
+            width: 400px;
+        }
+    }
+}
+
+@media(min-width:1600px) {
+    .main_formacion {
+        padding-bottom: 20px;
+    }
+
+    .main_formacion_section1 {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        img {
+            width: 500px;
+            height: fit-content;
+            margin: 40px;
+        }
+
+        p {
+            margin: 100px 40px 100px 20px;
+        }
+    }
+
+    .main_formacion_section2 {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        img {
+            width: 500px;
+            height: fit-content;
+            margin: 40px;
+        }
+
+        p {
+            margin: 150px 20px 100px 40px;
+        }
+    }
+
+    .main_formacion_section3 {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        img {
+            width: 400px;
+            height: fit-content;
+            margin: 40px;
+        }
+
+        p {
+            margin: 100px 40px 100px 20px;
+        }
+    }
+}
