@@ -82,7 +82,7 @@
 
 .main_inicio_presentation {
   text-align: center; }
-  .main_inicio_presentation h2 {
+  .main_inicio_presentation h1 {
     padding: 5px;
     margin: 5px;
     color: white; }
@@ -124,7 +124,7 @@
   margin: 30px 50px 15px 50px;
   padding: 10px;
   color: white; }
-  .main_inicio_section h3 {
+  .main_inicio_section h2 {
     margin-bottom: 10px;
     font-size: 22px; }
   .main_inicio_section p {
@@ -413,7 +413,7 @@
   height: max-content;
   width: 100%;
   min-width: 300px; }
-  .main_aboutme h2 {
+  .main_aboutme h1 {
     display: inline-block;
     margin: auto;
     margin-top: 50px;
@@ -654,7 +654,7 @@
     height: fit-content;
     margin: 50px 0px 50px 0px;
     width: 600px; }
-  .main_formacion_div h2 {
+  .main_formacion_div h1 {
     display: inline-block;
     color: white;
     text-align: center;
@@ -757,12 +757,12 @@
   background-image: url(../Fotos/Fondonav.jpg);
   background-color: black;
   /* RESPONSIVE PORTFOLIO */ }
-  .body_portfolio .section_titulo h2 {
+  .body_portfolio .section_titulo h1 {
     display: block;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 200px;
+    width: 250px;
     text-align: center;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
