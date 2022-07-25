@@ -145,57 +145,30 @@
     width: 400px;
     margin: auto;
     margin-top: 20px; }
-  .main_aboutme_progress .html_img {
-    width: 300px;
-    margin: auto;
-    margin-top: 20px;
-    display: block; }
-  .main_aboutme_progress .css_img {
+  .main_aboutme_progress .html_img, .main_aboutme_progress .css_img, .main_aboutme_progress .js_img {
     width: 300px;
     margin: auto;
     margin-top: 20px;
     display: block; }
   .main_aboutme_progress .js_img {
-    width: 195px;
-    margin: auto;
-    margin-top: 20px;
-    display: block; }
+    width: 195px; }
 
-.main_section_aboutme {
+.main_section_aboutme, .main_section2_aboutme, .main_section3_aboutme {
   display: flex; }
-  .main_section_aboutme p {
+  .main_section_aboutme p, .main_section2_aboutme p, .main_section3_aboutme p {
     color: white;
     margin: 80px 40px 20px 20px !important;
     text-align: justify; }
-  .main_section_aboutme img {
+  .main_section_aboutme img, .main_section2_aboutme img, .main_section3_aboutme img {
     width: 400px;
     height: fit-content;
     margin: 40px !important; }
 
 .main_section2_aboutme {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row-reverse; }
-  .main_section2_aboutme img {
-    width: 400px;
-    height: fit-content;
-    margin: 40px !important; }
+  flex-direction: row-reverse;
+  justify-content: flex-end; }
   .main_section2_aboutme p {
-    color: white;
-    margin: 90px 20px 20px 40px !important;
-    text-align: justify; }
-
-.main_section3_aboutme {
-  display: flex;
-  justify-content: flex-start; }
-  .main_section3_aboutme p {
-    color: white;
-    margin: 90px 40px 100px 20px !important;
-    text-align: justify; }
-  .main_section3_aboutme img {
-    width: 400px;
-    height: fit-content;
-    margin: 40px !important; }
+    margin: 120px 20px 20px 40px !important; }
 
 /* RESPONSIVE SOBRE MI */
 /* PROGRESS */
@@ -218,7 +191,7 @@
     height: 950px; }
     .main_aboutme_progress .progress {
       width: 250px; }
-    .main_aboutme_progress .html_img {
+    .main_aboutme_progress .html_img, .main_aboutme_progress .css_img, .main_aboutme_progress .js_img {
       width: 200px; }
     .main_aboutme_progress .css_img {
       width: 200px; }
@@ -230,12 +203,12 @@
   .main_aboutme {
     padding: 0;
     margin: 0; }
-  .main_section_aboutme {
+  .main_section_aboutme, .main_section2_aboutme, .main_section3_aboutme {
     justify-content: center;
     flex-wrap: wrap; }
-    .main_section_aboutme img {
+    .main_section_aboutme img, .main_section2_aboutme img, .main_section3_aboutme img {
       width: 250px; }
-    .main_section_aboutme p {
+    .main_section_aboutme p, .main_section2_aboutme p, .main_section3_aboutme p {
       text-align: justify;
       margin: 15px !important;
       padding: 0px; }
@@ -260,7 +233,7 @@
       width: 250px; } }
 
 @media (min-width: 450px) {
-  .main_section_aboutme img {
+  .main_section_aboutme img, .main_section2_aboutme img, .main_section3_aboutme img {
     width: 300px; }
   .main_section2_aboutme img {
     width: 300px; }
@@ -268,7 +241,7 @@
     width: 300px; } }
 
 @media (min-width: 750px) {
-  .main_section_aboutme img {
+  .main_section_aboutme img, .main_section2_aboutme img, .main_section3_aboutme img {
     width: 400px; }
   .main_section2_aboutme img {
     width: 400px; }
@@ -276,12 +249,13 @@
     width: 400px; } }
 
 @media (min-width: 1600px) {
-  .main_section_aboutme {
+  .main_section_aboutme, .main_section2_aboutme, .main_section3_aboutme {
     justify-content: flex-start;
     flex-wrap: nowrap; }
-    .main_section_aboutme p {
+    .main_section_aboutme p, .main_section2_aboutme p, .main_section3_aboutme p {
+      padding-top: 20px !important;
       margin: 100px 40px 100px 20px !important; }
-    .main_section_aboutme img {
+    .main_section_aboutme img, .main_section2_aboutme img, .main_section3_aboutme img {
       width: 400px;
       height: fit-content;
       margin: 40px !important; }
@@ -289,6 +263,7 @@
     justify-content: flex-end;
     flex-wrap: nowrap; }
     .main_section2_aboutme p {
+      padding-top: 50px !important;
       margin: 80px 20px 100px 40px !important; }
     .main_section2_aboutme img {
       width: 400px;
@@ -298,6 +273,7 @@
     justify-content: flex-start;
     flex-wrap: nowrap; }
     .main_section3_aboutme p {
+      padding-top: 50px !important;
       margin: 80px 40px 100px 20px !important; }
     .main_section3_aboutme img {
       width: 400px;
@@ -321,11 +297,6 @@
     border-bottom: 2px solid white;
     border-top: 2px solid white; }
   .body_portfolio .main_portfolio {
-    /* background-image: url(./Fotos/Fondonav.jpg);
-        background-color: black;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; */
     height: max-content !important;
     width: 80%;
     margin: auto;
@@ -337,7 +308,6 @@
       width: 96%; }
       .body_portfolio .main_portfolio .main_div_images img {
         width: 100%;
-        border: 6px solid white;
         transition: 0.5s; }
       .body_portfolio .main_portfolio .main_div_images .card {
         width: 100% !important;
@@ -516,44 +486,26 @@
   padding-bottom: 20px;
   min-width: 300px; }
 
-.main_formacion_section1 {
+.main_formacion_section1, .main_formacion_section2, .main_formacion_section3 {
   display: flex; }
-  .main_formacion_section1 p {
+  .main_formacion_section1 p, .main_formacion_section2 p, .main_formacion_section3 p {
     color: white;
     text-align: justify;
     margin: 100px 40px 100px 20px; }
-  .main_formacion_section1 img {
+  .main_formacion_section1 img, .main_formacion_section2 img, .main_formacion_section3 img {
     width: 500px;
     height: fit-content;
     margin: 40px;
     transition: .5s; }
 
 .main_formacion_section2 {
-  display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap; }
   .main_formacion_section2 p {
-    color: white;
-    text-align: justify;
     margin: 150px 20px 100px 40px; }
-  .main_formacion_section2 img {
-    width: 500px;
-    height: fit-content;
-    margin: 40px;
-    transition: .5s; }
 
 .main_formacion_section3 {
-  display: flex;
   flex-wrap: wrap; }
-  .main_formacion_section3 p {
-    color: white;
-    text-align: justify;
-    margin: 100px 40px 100px 20px; }
-  .main_formacion_section3 img {
-    width: 400px;
-    height: fit-content;
-    margin: 40px;
-    transition: .5s; }
 
 .main_formacion_div {
   display: flex;
@@ -589,12 +541,12 @@
   .main_formacion {
     padding: 0;
     margin: 0; }
-  .main_formacion_section1 {
+  .main_formacion_section1, .main_formacion_section2, .main_formacion_section3 {
     justify-content: center;
     flex-wrap: wrap; }
-    .main_formacion_section1 img {
+    .main_formacion_section1 img, .main_formacion_section2 img, .main_formacion_section3 img {
       width: 250px; }
-    .main_formacion_section1 p {
+    .main_formacion_section1 p, .main_formacion_section2 p, .main_formacion_section3 p {
       text-align: justify;
       margin: 15px;
       padding: 0px; }
@@ -617,7 +569,7 @@
       width: 250px; } }
 
 @media (min-width: 450px) {
-  .main_formacion_section1 img {
+  .main_formacion_section1 img, .main_formacion_section2 img, .main_formacion_section3 img {
     width: 300px; }
   .main_formacion_section2 img {
     width: 300px; }
@@ -625,7 +577,7 @@
     width: 300px; } }
 
 @media (min-width: 750px) {
-  .main_formacion_section1 img {
+  .main_formacion_section1 img, .main_formacion_section2 img, .main_formacion_section3 img {
     width: 400px; }
   .main_formacion_section2 img {
     width: 400px; }
@@ -635,14 +587,14 @@
 @media (min-width: 1600px) {
   .main_formacion {
     padding-bottom: 20px; }
-  .main_formacion_section1 {
+  .main_formacion_section1, .main_formacion_section2, .main_formacion_section3 {
     justify-content: flex-start;
     flex-wrap: nowrap; }
-    .main_formacion_section1 img {
+    .main_formacion_section1 img, .main_formacion_section2 img, .main_formacion_section3 img {
       width: 500px;
       height: fit-content;
       margin: 40px; }
-    .main_formacion_section1 p {
+    .main_formacion_section1 p, .main_formacion_section2 p, .main_formacion_section3 p {
       margin: 100px 40px 100px 20px; }
   .main_formacion_section2 {
     justify-content: flex-end;

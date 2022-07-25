@@ -30,41 +30,19 @@
 }
 
 .main_formacion_section2 {
-    display: flex;
+    @extend .main_formacion_section1;
     flex-direction: row-reverse;
     flex-wrap: wrap;
 
-    p {
-        color: white;
-        text-align: justify;
+    p{
         margin: 150px 20px 100px 40px;
-    }
-
-    img {
-        width: 500px;
-        height: fit-content;
-        margin: 40px;
-        transition: .5s;
     }
     
 }
 
 .main_formacion_section3 {
-    display: flex;
+    @extend .main_formacion_section1;
     flex-wrap: wrap;
-
-    p {
-        color: white;
-        text-align: justify;
-        margin: 100px 40px 100px 20px;
-    }
-
-    img {
-        width: 400px;
-        height: fit-content;
-        margin: 40px;
-        transition: .5s;
-    }
 }
 
 .main_formacion_div {

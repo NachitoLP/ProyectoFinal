@@ -45,17 +45,12 @@
     }
 
     .css_img {
-        width: 300px;
-        margin: auto;
-        margin-top: 20px;
-        display: block;
+        @extend .html_img;
     }
 
     .js_img {
+        @extend .html_img;
         width: 195px;
-        margin: auto;
-        margin-top: 20px;
-        display: block;
     }
 }
 
@@ -76,39 +71,17 @@
 }
 
 .main_section2_aboutme {
-    display: flex;
-    justify-content: flex-end;
+    @extend .main_section_aboutme;
     flex-direction: row-reverse;
+    justify-content: flex-end;
 
-    img {
-        width: 400px;
-        height: fit-content;
-        margin: 40px !important;
+    p{
+        margin: 120px 20px 20px 40px !important;
     }
-
-    p {
-        color: white;
-        margin: 90px 20px 20px 40px !important;
-        text-align: justify;
-    }
-    
 }
 
 .main_section3_aboutme {
-    display: flex;
-    justify-content: flex-start;
-
-    p {
-        color: white;
-        margin: 90px 40px 100px 20px !important;
-        text-align: justify;
-    }
-
-    img {
-        width: 400px;
-        height: fit-content;
-        margin: 40px !important;
-    }
+    @extend .main_section_aboutme;
 }
 
 /* RESPONSIVE SOBRE MI */
@@ -260,6 +233,7 @@
         flex-wrap: nowrap;
 
         p {
+            padding-top: 20px !important;
             margin: 100px 40px 100px 20px !important;
         }
 
@@ -275,6 +249,7 @@
         flex-wrap: nowrap;
 
         p {
+            padding-top: 50px !important;
             margin: 80px 20px 100px 40px !important;
         }
 
@@ -290,6 +265,7 @@
         flex-wrap: nowrap;
 
         p {
+            padding-top: 50px !important;
             margin: 80px 40px 100px 20px !important;
         }
 
