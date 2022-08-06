@@ -108,7 +108,11 @@
         }
     }
 }
-
+@media(min-width:353px) {
+    .main_inicio{
+        height: 1800px;
+    }
+}
 @media(min-width:450px) {
     .main_inicio {
         height: 1900px;

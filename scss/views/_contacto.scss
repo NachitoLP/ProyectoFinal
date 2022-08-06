@@ -110,26 +110,29 @@
 /* RESPONSIVE CONTACTO */
 
 @media(min-width:200px) {
+    .main_contact {
+        height: 900px;
+    }
     .main_contact_form {
         fieldset {
-            width: 200px;
+            width: 250px;
             margin-top: 0px;
         }
 
         input {
-            width: 200px;
+            width: 250px;
             margin: 5px;
             padding: 0px;
         }
 
         textarea {
-            width: 200px;
+            width: 250px;
             margin: 5px;
             padding: 0px;
         }
 
         select {
-            width: 200px;
+            width: 250px;
             margin: 5px;
             padding: 0px;
         }
@@ -148,22 +151,28 @@
         }
 
         input {
-            width: 300px;
+            width: 320px;
             margin: 10px;
             padding: 10px;
         }
 
         textarea {
-            width: 300px;
+            width: 320px;
             margin: 10px;
             padding: 10px;
         }
 
         select {
-            width: 300px;
+            width: 320px;
             margin: 10px;
             padding: 10px;
         }
+    }
+}
+
+@media(min-width:380px) {
+    .main_contact {
+        height: 800px;
     }
 }
 
@@ -208,6 +217,9 @@
 }
 
 @media(min-width:900px) {
+    .main_contact {
+        height: 1000px;
+    }
     .main_contact_form {
         fieldset {
             width: 1000px;

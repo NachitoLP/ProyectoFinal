@@ -89,6 +89,10 @@
     margin-top: 50px !important;
     width: 250px !important; } }
 
+@media (min-width: 353px) {
+  .main_inicio {
+    height: 1800px; } }
+
 @media (min-width: 450px) {
   .main_inicio {
     height: 1900px; }
@@ -408,19 +412,21 @@
 
 /* RESPONSIVE CONTACTO */
 @media (min-width: 200px) {
+  .main_contact {
+    height: 900px; }
   .main_contact_form fieldset {
-    width: 200px;
+    width: 250px;
     margin-top: 0px; }
   .main_contact_form input {
-    width: 200px;
+    width: 250px;
     margin: 5px;
     padding: 0px; }
   .main_contact_form textarea {
-    width: 200px;
+    width: 250px;
     margin: 5px;
     padding: 0px; }
   .main_contact_form select {
-    width: 200px;
+    width: 250px;
     margin: 5px;
     padding: 0px; }
   .main_contact_form label {
@@ -431,17 +437,21 @@
   .main_contact_form fieldset {
     width: 500px; }
   .main_contact_form input {
-    width: 300px;
+    width: 320px;
     margin: 10px;
     padding: 10px; }
   .main_contact_form textarea {
-    width: 300px;
+    width: 320px;
     margin: 10px;
     padding: 10px; }
   .main_contact_form select {
-    width: 300px;
+    width: 320px;
     margin: 10px;
     padding: 10px; } }
+
+@media (min-width: 380px) {
+  .main_contact {
+    height: 800px; } }
 
 @media (min-width: 520px) {
   .main_contact_form fieldset {
@@ -464,6 +474,8 @@
     width: 600px; } }
 
 @media (min-width: 900px) {
+  .main_contact {
+    height: 1000px; }
   .main_contact_form fieldset {
     width: 1000px;
     margin-top: 20px; }
